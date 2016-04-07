@@ -12,7 +12,7 @@ body {
   overflow: hidden;
   font-size: 4vw;
   background: #000;
-  font-family: "Adobe Caslon Pro", sans-serif;
+  font-family: "Adobe Caslon Pro", "Baskerville", Georgia, serif;
   font-weight: 400;
   color: #242018;
 }
