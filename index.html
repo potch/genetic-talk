@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>On Genetic Algorithms</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="decky.css">
+    <link rel="stylesheet" href="solarized_light.css">
+    <link rel="stylesheet" href="truecrimes_regular_macroman/stylesheet.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="highlight.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <h2>On Genetic Algorithms,</h2>
+      <h3><i>A perſonal caſe study in which Triangles are made to cavort and carouſe in the service of giving Earthly form to a Platonic Ideal.</i></h3>
+      <br>
+      <small>The Proceedings of the Royal Waffle JavaScript Inſtitute, 6 April 2016</small>
+    </section>
+    <section>
+      <img class="fancy sepia" src="img/me-triangles.svg">
+    </section>
+    <section>
+      <img class="fancy sepia" src="img/headshot-sweater.jpg">
+    </section>
+    <section>
+      <img class="sepia" src="img/fxlogo-old.png">
+    </section>
+    <section>
+      <iframe class="sepia" src="http://rogeralsing.com/2008/12/07/genetic-programming-evolution-of-mona-lisa/"></iframe>
+    </section>
+    <section>
+      <h2>
+        <i><img src="img/dna.svg" style="height: 2em;"><sub>parent</sub></i>
+        →
+        mutate()
+        →
+        <i><img src="img/dna.svg" style="height: 2em;"><sub>child</sub></i>
+      </h2>
+    </section>
+    <section>
+      <h1>
+        <img src="img/dna.svg" style="height: 2em;">
+        →
+        fitness()
+        →
+        <i>score</i>
+      </h1>
+    </section>
+    <section>
+      <h1>
+        <i>score<sub>child</sub></i>
+        >
+        <i>score<sub>parent</sub></i>
+      </h1>
+    </section>
+    <section>
+      <h1>
+        <i><img src="img/dna.svg" style="height: 2em;"><sub>child</sub></i>
+        →
+        <i><img src="img/dna.svg" style="height: 2em;"><sub>parent</sub></i>
+      </h1>
+    </section>
+    <section>
+      <iframe class="tall" src="http://potch.github.io/genetic-canvas/"></iframe>
+    </section>
+    <section>
+      <img class="fancy sepia" src="img/me-triangles.svg">
+    </section>
+    <section>
+      <h4><code>
+        03481b1d4065cd030c7860353a862848c0103460d4830238101837ec012031e121ea00bb30f82bb6a91410586a5042a284431baf0d0410a4e4589fac6460383a0e040e82cadf288089e119a2609236196523af4541a2a1a9582026b91000040f98cba3302b288a525a411464031c4529061cab0821501547d3c6280d7acf5880cbef0800
+      </code></h4>
+    </section>
+    <section>
+      <pre style="font-size: .8em">             <span class="hljs-keyword">[header]</span>
+         <b class="hljs-number">03</b>  # of sides
+   <b class="hljs-number">48 1b 1d</b>  background color (RGB)
+
+             <span class="hljs-keyword">[polygon 1]</span>
+<b class="hljs-number">40 65 cd 03</b>  fill color (RGBA)
+      <b class="hljs-number">0c 78</b>  vertex 1 (x, y)
+      <b class="hljs-number">60 35</b>  vertex 2 (x, y)
+      <b class="hljs-number">3a 86</b>  vertex 3 (x, y)
+         <b class="hljs-number">28</b>  draw order (z)
+
+             <span class="hljs-keyword">[polygon 2]</span>
+        ...</pre>
+    </section>
+    <section>
+      <h1>&ldquo;Mutation&rdquo;</h1>
+    </section>
+    <section>
+      <h2><code>
+        03 48 1b 1d 40 65 ...
+      </code></h2>
+    </section>
+    <section>
+      <h2><code>
+        03 48 <mark>1b</mark> 1d 40 65 ...
+      </code></h2>
+    </section>
+    <section>
+      <h2>gene = Maths.random() * 256</h2>
+    </section>
+    <section>
+      <h2>gene += Maths.random() * <i>m</i></h2>
+    </section>
+    <section>
+      <h2>&ldquo;Coſmic Ray Approach&rdquo;</h2>
+    </section>
+    <section>
+      <h2>0x1b = 0b00011011</h2>
+    </section>
+    <section>
+      <h1>00011011</h1>
+    </section>
+    <section>
+      <h1>0<mark>0</mark>011011</h1>
+    </section>
+    <section>
+      <h1>01011011</h1>
+    </section>
+    <section>
+      <img src="img/localmaxima.svg" style="width: 80vh">
+    </section>
+    <section>
+      <img src="img/ndt.jpg">
+    </section>
+    <section>
+      <img src="img/annealing.svg" style="width: 80vh">
+    </section>
+    <section>
+      <iframe class="tall" src="http://potch.github.io/genetic-canvas/"></iframe>
+    </section>
+    <section>
+      <i>Inspired by:</i>
+      <a href="http://rogeralsing.com/2008/12/07/genetic-programming-evolution-of-mona-lisa/"><small>Roger Johansson's &ldquo;Genetic Programming: Evolution of Mona Lisa&rdquo;</small></a>
+      <i>Demo:</i>
+      <a href="http://potch.github.io/genetic-canvas/">http://potch.github.io/genetic-canvas/</a>
+      <i>Code:</i>
+      <a href="https://github.com/potch/genetic-canvas/">https://github.com/potch/genetic-canvas/</a>
+    </section>
+    <footer>
+      <div class="progress talk-progress"></div>
+      <div class="progress time-progress"></div>
+    </footer>
+    <script src="decky.js"></script>
+    <script>
+
+      var els = document.querySelectorAll('code[data-src]');
+      Array.from(els).forEach(function (el) {
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", function () {
+          el.innerHTML = this.responseText.replace('<', '&lt;', 'g');
+          hljs.highlightBlock(el);
+        });
+        xhr.open("GET", el.getAttribute('data-src'));
+        xhr.send();
+      });
+
+      var iframes = document.querySelectorAll('iframe');
+      iframes = Array.from(iframes);
+      iframes.forEach(function (i) {
+        var src = i.src;
+        i.setAttribute('data-src', src);
+        i.src = '';
+      });
+
+      var talkProgress = document.querySelector('.talk-progress');
+      var timeProgress = document.querySelector('.time-progress');
+      var sTime;
+      var timer;
+      var going = false;
+      decky.onSlideChange = function (n) {
+        if (n > 1 && !going) {
+          going = true;
+          timer = setInterval(update, 100);
+          sTime = Date.now();
+          console.log('starting timer');
+        }
+        var pct = (n / decky.num * 100) + '%';
+        talkProgress.style.width = pct;
+
+        iframes.forEach(function (i) {
+          i.src = '';
+        });
+
+        var f = document.querySelector('.active iframe');
+        if (f && window.top === window) {
+          f.src = f.getAttribute('data-src');
+        }
+      };
+      function update() {
+        var time = ((Date.now() - sTime) / (10 * 60 * 1000)) * 100 + '%';
+        timeProgress.style.width = time;
+      }
+    </script>
+    <script>
+
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
